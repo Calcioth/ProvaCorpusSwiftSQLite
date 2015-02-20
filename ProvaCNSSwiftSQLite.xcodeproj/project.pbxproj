@@ -13,6 +13,12 @@
 		7E49B77F1A97084600A0AEF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E49B77E1A97084600A0AEF8 /* Images.xcassets */; };
 		7E49B7821A97084600A0AEF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E49B7801A97084600A0AEF8 /* LaunchScreen.xib */; };
 		7E49B78E1A97084600A0AEF8 /* ProvaCNSSwiftSQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E49B78D1A97084600A0AEF8 /* ProvaCNSSwiftSQLiteTests.swift */; };
+		7E49B7A31A97085400A0AEF8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E49B7991A97085400A0AEF8 /* FMDatabase.m */; };
+		7E49B7A41A97085400A0AEF8 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E49B79B1A97085400A0AEF8 /* FMDatabaseAdditions.m */; };
+		7E49B7A51A97085400A0AEF8 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E49B79D1A97085400A0AEF8 /* FMDatabasePool.m */; };
+		7E49B7A61A97085400A0AEF8 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E49B79F1A97085400A0AEF8 /* FMDatabaseQueue.m */; };
+		7E49B7A71A97085400A0AEF8 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E49B7A21A97085400A0AEF8 /* FMResultSet.m */; };
+		7E49B7A91A97086F00A0AEF8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E49B7A81A97086F00A0AEF8 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,19 @@
 		7E49B7871A97084600A0AEF8 /* ProvaCNSSwiftSQLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProvaCNSSwiftSQLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E49B78C1A97084600A0AEF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E49B78D1A97084600A0AEF8 /* ProvaCNSSwiftSQLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvaCNSSwiftSQLiteTests.swift; sourceTree = "<group>"; };
+		7E49B7971A97085400A0AEF8 /* ProvaCNSSwiftSQLite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProvaCNSSwiftSQLite-Bridging-Header.h"; sourceTree = "<group>"; };
+		7E49B7981A97085400A0AEF8 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		7E49B7991A97085400A0AEF8 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		7E49B79A1A97085400A0AEF8 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		7E49B79B1A97085400A0AEF8 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		7E49B79C1A97085400A0AEF8 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		7E49B79D1A97085400A0AEF8 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		7E49B79E1A97085400A0AEF8 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		7E49B79F1A97085400A0AEF8 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		7E49B7A01A97085400A0AEF8 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		7E49B7A11A97085400A0AEF8 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		7E49B7A21A97085400A0AEF8 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		7E49B7A81A97086F00A0AEF8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E49B7A91A97086F00A0AEF8 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +79,7 @@
 		7E49B7691A97084500A0AEF8 = {
 			isa = PBXGroup;
 			children = (
+				7E49B7A81A97086F00A0AEF8 /* libsqlite3.dylib */,
 				7E49B7741A97084500A0AEF8 /* ProvaCNSSwiftSQLite */,
 				7E49B78A1A97084600A0AEF8 /* ProvaCNSSwiftSQLiteTests */,
 				7E49B7731A97084500A0AEF8 /* Products */,
@@ -77,12 +98,24 @@
 		7E49B7741A97084500A0AEF8 /* ProvaCNSSwiftSQLite */ = {
 			isa = PBXGroup;
 			children = (
+				7E49B7981A97085400A0AEF8 /* FMDatabase.h */,
+				7E49B7991A97085400A0AEF8 /* FMDatabase.m */,
+				7E49B79A1A97085400A0AEF8 /* FMDatabaseAdditions.h */,
+				7E49B79B1A97085400A0AEF8 /* FMDatabaseAdditions.m */,
+				7E49B79C1A97085400A0AEF8 /* FMDatabasePool.h */,
+				7E49B79D1A97085400A0AEF8 /* FMDatabasePool.m */,
+				7E49B79E1A97085400A0AEF8 /* FMDatabaseQueue.h */,
+				7E49B79F1A97085400A0AEF8 /* FMDatabaseQueue.m */,
+				7E49B7A01A97085400A0AEF8 /* FMDB.h */,
+				7E49B7A11A97085400A0AEF8 /* FMResultSet.h */,
+				7E49B7A21A97085400A0AEF8 /* FMResultSet.m */,
 				7E49B7771A97084500A0AEF8 /* AppDelegate.swift */,
 				7E49B7791A97084500A0AEF8 /* ViewController.swift */,
 				7E49B77B1A97084600A0AEF8 /* Main.storyboard */,
 				7E49B77E1A97084600A0AEF8 /* Images.xcassets */,
 				7E49B7801A97084600A0AEF8 /* LaunchScreen.xib */,
 				7E49B7751A97084500A0AEF8 /* Supporting Files */,
+				7E49B7971A97085400A0AEF8 /* ProvaCNSSwiftSQLite-Bridging-Header.h */,
 			);
 			path = ProvaCNSSwiftSQLite;
 			sourceTree = "<group>";
@@ -212,8 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E49B7A31A97085400A0AEF8 /* FMDatabase.m in Sources */,
 				7E49B77A1A97084500A0AEF8 /* ViewController.swift in Sources */,
+				7E49B7A71A97085400A0AEF8 /* FMResultSet.m in Sources */,
+				7E49B7A51A97085400A0AEF8 /* FMDatabasePool.m in Sources */,
 				7E49B7781A97084500A0AEF8 /* AppDelegate.swift in Sources */,
+				7E49B7A41A97085400A0AEF8 /* FMDatabaseAdditions.m in Sources */,
+				7E49B7A61A97085400A0AEF8 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,9 +376,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProvaCNSSwiftSQLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProvaCNSSwiftSQLite/ProvaCNSSwiftSQLite-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +389,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProvaCNSSwiftSQLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProvaCNSSwiftSQLite/ProvaCNSSwiftSQLite-Bridging-Header.h";
 			};
 			name = Release;
 		};
